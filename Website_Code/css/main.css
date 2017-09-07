@@ -1,0 +1,509 @@
+/*****************************************************************************/
+                              /*FONTS*/
+/*****************************************************************************/
+@import "../fonts/stylesheet.css";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*****************************************************************************/
+                              /*CSS RESET*/
+/*****************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+img {
+	max-width:100%;
+}
+
+/*****************************************************************************/
+                              /*END RESET*/
+/*****************************************************************************/
+
+/*****************************************************************************/
+                              /*CUSTOM STYLING*/
+/*****************************************************************************/
+
+
+body{
+    font-family: 'gibsonbold', 'Source Sans Pro', arial, sans-serif;
+	overflow-x: hidden !important;
+}
+
+.logo{
+    
+}
+
+.heroImg img{
+/*
+	height: 100%;
+	background-color: aquamarine;
+*/
+/*	background: url(../img/people.jpg)no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
+	width: 100%;
+	overflow: hidden;
+}
+
+
+nav {
+	box-shadow: 0px 5px 10px #333;
+}
+
+.navbar {
+	padding-bottom: 10px;
+}
+
+.img-overlay{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	text-align: center;
+	color: #000;
+	z-index: 1000;
+	font-size: 1.2em;
+	
+}
+
+
+/*BOOK NOW BUTTON STYLE BOOK NOW BUTTON STYLE BOOK NOW BUTTON STYLE BOOK NOW BUTTON STYLE BOOK NOW BUTTON STYLE BOOK NOW BUTTON STYLE BOOK NOW BUTTON STYLE BOOK NOW BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE BUTTON STYLE*/
+.book-now{
+	background: rgba(255,255,255,0.97);
+	padding: 10px;
+	box-shadow: 0px 5px 8px #333;
+	color: #333;
+}
+
+.book-now h1{
+	margin-top: 0;
+}
+
+.book-now p{
+	font-family: 'gibsonlight';
+}
+
+.book-now button{
+	 border-radius: 5px;
+	border: 1px solid transparent;
+	border-color: #4cae4c;
+	background-color: rgba(92,184,92,1.00);
+	padding: 10px 60px;
+	color: #fff;
+	box-shadow: 0px 2px 2px #333;
+	
+}
+
+
+li {
+	text-decoration: none;
+	list-style-type: none;	
+}
+
+.remaining-content span {
+    display:none;
+}
+
+footer {
+	color: #FFFFFF;
+	padding-bottom: 30px;
+}
+
+.footer-links a{
+	color: #FFFFFF;
+}
+
+.footer-socialmedias a{
+	display: inherit;
+	color: #ffffff;
+}
+
+.contact-info a{
+	color: #ffffff;
+}
+/*HR STYLE HR STYLE HR STYLE HR STYLE HR STYLE HR STYLE HR STYLE HR STYLE*/
+
+hr.style8 {
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+hr.style8:after {
+	content: '';
+	display: block;
+	margin-top: 2px;
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+
+
+/*MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES*/
+
+@media screen and (max-width: 599px){
+	body{
+		padding-top: 60px;
+	}
+	
+	footer{
+		padding-bottom: 27%;
+	}
+	
+	.img-overlay .book-now{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin:  auto;
+	}
+	
+	.hide-mobile{
+		display: none;
+	}
+	
+	#quote-carousel .carousel-control{
+		display: none;
+	}
+	
+	.book-now h1{
+		font-size: 25pt;
+	}
+	
+	.navbar-collapse .dropdown-menu{
+		position: relative;
+	}
+	
+	.dropdown-item {
+		display: block;
+		text-align: center;
+		
+	}
+	
+}
+
+
+@media (min-width:600px){
+	body{
+		padding-top: 0px;
+	}
+	
+	.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 26%;
+}
+	.book-now h1{
+		font-size: 30pt;
+	}
+	
+}
+
+@media (min-width:768px){
+		.img-overlay:before {
+	  content: ' ';
+	  display: block;
+	  /* adjust 'height' to position overlay content vertically */
+	  height: 36%;
+	}
+	
+	.subscribe-button{
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width:992px){
+	.looped-cities:before {
+		content: ' ';
+		display: block;
+		height: 30px;
+	}
+	
+	.travel h2{
+		text-align: center;
+	}
+}
+
+@media (min-width:992px){
+	.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 45%;
+}
+	.travel h2{
+		margin-top: 0px;
+		text-align: center;
+	}
+}
+
+@media (min-width:1200px){
+	.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 55%;
+}
+	.carousel-inner{
+		height: 100vh;
+	}
+}
+
+/*FORM FORM  FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM*/
+
+.checkbox-success input[type="checkbox"]:checked + label::before {
+  background-color: #5cb85c;
+  border-color: #5cb85c; }
+.checkbox-success input[type="checkbox"]:checked + label::after {
+  color: #fff; }
+
+
+
+
+
+
+/*TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL TESTIMONIAL CAROUSEL */
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #333;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+	height: 100px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border-color: #333;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.morelink{
+	font-size: 12pt;
+}
+
+.carousel-inner {
+    min-height: 300px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+.img-responsive {
+	margin-top: 1.2vh;
+}
+
+
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 25px;
+	height: 25px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:25px;
+	text-align: center;
+}
+
+a {
+ background-color: #D3D3D3;   
+}
+
+.social-circle i {
+	color: #fff;
+}
+
+
+/*PRESS SLIDER PRESS SLIDER PRESS SLIDER PRESS SLIDER PRESS SLIDER PRESS SLIDER PRESS SLIDER PRESS SLIDER*/
+.slider {
+  width: 100%;
+  top: calc(50% - 97.25px);
+  overflow: hidden;
+}
+.slider .slider-row {
+  width: 1984px;
+  height: 150px;
+  background-image: url(../img/press.jpg);
+  background-size: 1984px 150px;
+  -webkit-animation: slide 50s linear infinite;
+          animation: slide 50s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -1984px;
+  }
+}
+
+@keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -1984px;
+  }
+}
+
+/*PRESS SLIDER*/
+
+/*TRANSITIONING THE HAMBURGER MENU TO CLOSING ICON TRANSITIONING THE HAMBURGER MENU TO CLOSING ICON TRANSITIONING THE HAMBURGER MENU TO CLOSING ICON TRANSITIONING THE HAMBURGER MENU TO CLOSING ICON TRANSITIONING THE HAMBURGER MENU TO CLOSING ICON TRANSITIONING THE HAMBURGER MENU TO CLOSING ICON TRANSITIONING THE HAMBURGER MENU TO CLOSING ICON*/
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+	margin-top: -2px;
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+a {
+	
+}
+
+nav a {
+	color: #333;
+}
+
+
+
